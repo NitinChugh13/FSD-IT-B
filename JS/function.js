@@ -20,10 +20,11 @@
 // (function(){
 //     console.log("IIFE");
 // })();
-function hello(user,callback){
-    console.log(`Hello ${user}`);
-    callback();
-}
-hello("Vihaan",function(){
-    console.log("This is callback function");
-});
+// function hello(user,callback){
+//     console.log(`Hello ${user}`);
+//     callback();
+// }
+// hello("Vihaan",function(){
+//     console.log("This is callback function");
+// });
+
