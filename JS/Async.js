@@ -11,7 +11,7 @@ function send_email() {
     return new Promise((resolve, reject) => {  
         setTimeout(() => {
             console.log("Email sent");
-            resolve();
+          resolve();
         }, 3000);
     });
 }
@@ -78,5 +78,4 @@ await send_email();
 await (() => console.log("All functions are done"));
 }
 runAll();
-
 
