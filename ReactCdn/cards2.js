@@ -39,3 +39,21 @@ function Book() {
       
       const root = ReactDOM.createRoot(document.querySelector("#root"));
       root.render(React.createElement(Book));
+
+
+// const image = React.createElement("img",{
+//         src :"https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
+//         width:"200px",
+//         height:"300px",
+//         alt :"The Alchemist"
+// },null);
+
+// const h3 = React.createElement("h3",null,"Title: The Alchemist");
+// const h4 = React.createElement("h4",null,"Price: ₹399");
+// const btn = React.createElement("button",null,"ADD TO CART");
+// const div = React.createElement("div",{className:"card"},image,h3,btn);
+
+// //search in real dom
+// const parent = document.getElementById("root");
+// //connect to virtual dom
+// ReactDOM.render(div,parent); // old method

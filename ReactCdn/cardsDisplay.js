@@ -26,13 +26,31 @@ function BookCard({ title, price, image }) {
   const priceStyle = {
     color: "#007bff",
     fontWeight: "600",
+    marginBottom: "10px",
   };
+
+  const buttonStyle = {
+    backgroundColor: "#007bff",
+    color: "white",
+    border: "none",
+    padding: "8px 12px",
+    borderRadius: "5px",
+    cursor: "pointer",
+    fontSize: "14px",
+  };
+
+  function handleAddToCart() {
+    alert(`${title} added to cart!`);
+  }
 
   return (
     <div style={cardStyle}>
       <img src={image} alt={title} style={imgStyle} />
       <div style={titleStyle}>{title}</div>
       <div style={priceStyle}>₹{price}</div>
+      <button style={buttonStyle} onClick={handleAddToCart}>
+        Add to Cart
+      </button>
     </div>
   );
 }
