@@ -4,23 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Cards - React CDN</title>
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <style>
-    .card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 16px;
-      margin: 16px;
-      text-align: center;
-      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    }
-  </style>
   <body>
     <h1 style="text-align: center;">Book Store</h1>
     <div id="root"></div> 
 
     
-    <script type="module" src = "main.jsx"></script>
+    <script type="text/babel" src="cardsDisplay.js"></script>
   </body>
 </html>
-
