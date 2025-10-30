@@ -1,0 +1,6 @@
+1. Virtual dom makes the image without reloading the complete page 
+2. This is known as the diffing 
+3. HMR - Hot module replacement 
+4.React has two core modules :
+   i) react
+   ii) React Dom 
