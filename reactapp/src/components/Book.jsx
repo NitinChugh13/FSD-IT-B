@@ -5,7 +5,7 @@ const Book = ({book}) => {
 // let count = 0 it will not work
     const[count,setCount] = useState(0)
     const addToCart = ()=>{
-        alert(`Successfully Added ${book.title} book`)
+        alert(`Successfully Added ${count} ${book.title} book`)
     }
     
     const increment = ()=>{
