@@ -1,0 +1,6 @@
+.admin-nav{width:220px;min-height:60vh;background:linear-gradient(180deg,#003366,#0055a4);color:white;padding:20px;border-radius:8px}
+.admin-nav h3{text-align:center;margin:0 0 16px 0}
+.admin-nav nav{display:flex;flex-direction:column;gap:10px}
+.admin-nav a{color:white;text-decoration:none;padding:8px;border-radius:6px}
+.admin-nav a.active{background:var(--accent);color:#003049;font-weight:700}
+@media(max-width:900px){.admin-nav{display:none}}

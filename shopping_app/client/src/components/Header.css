@@ -1,0 +1,21 @@
+.header{
+  background: linear-gradient(90deg,var(--brand-1),var(--brand-2));
+  color:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 8px rgba(2,6,23,0.12);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 0;
+}
+.logo a{font-weight:700;font-size:1.25rem;color:white;text-decoration:none}
+.header-nav{display:flex;gap:18px;align-items:center}
+.header-nav a{color:white;text-decoration:none;font-weight:500}
+.btn.small{background:var(--accent);color:#002233;padding:6px 10px;border-radius:20px}
+@media(max-width:720px){
+  .header-nav{display:none}
+}
