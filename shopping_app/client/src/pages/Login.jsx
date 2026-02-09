@@ -1,22 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function Login(){
-  const navigate = useNavigate();
-  function submit(e){
-    e.preventDefault();
-    // fake auth
-    localStorage.setItem("user","demo");
-    navigate("/user");
-  }
   return (
-    <div className="container">
-      <h1>Login</h1>
-      <form onSubmit={submit} style={{maxWidth:420}}>
-        <input placeholder="Email" required style={{width:"100%",padding:10,marginBottom:10}} />
-        <input placeholder="Password" type="password" required style={{width:"100%",padding:10,marginBottom:10}} />
-        <button className="btn" style={{padding:"10px 16px"}}>Login</button>
-      </form>
-    </div>
+    <section className="py-20">
+      <div className="max-w-md mx-auto px-6">
+        <h2 className="text-2xl font-bold mb-4">Login</h2>
+        <form className="card-glass p-6 space-y-4">
+          <input placeholder="Email" className="w-full px-4 py-2 rounded bg-white/60 dark:bg-gray-800/60" />
+          <input placeholder="Password" type="password" className="w-full px-4 py-2 rounded bg-white/60 dark:bg-gray-800/60" />
+          <button className="btn-primary w-full">Login</button>
+        </form>
+      </div>
+    </section>
   );
 }
+

@@ -1,21 +1,40 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-// import { ShopContext } from "../context/ShopContext";
-import "./ProductCard.css";
+import { motion } from "framer-motion";
+import { FaStar } from "react-icons/fa";
 
-const ProductCard = ({ product }) => {
-  const { addToCart } = useContext(ShopContext);
-
+export default function ProductCard({ product }) {
   return (
-    <div className="product-card">
+    <motion.div
+      className="bg-white rounded-xl shadow-card hover:shadow-lg transition p-4 cursor-pointer"
+      whileHover={{ scale: 1.03 }}
+    >
       <Link to={`/product/${product.id}`}>
-        <img src={product.image} alt={product.name} />
-      </Link>
-      <h3>{product.name}</h3>
-      <p>₹{product.price}</p>
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
-    </div>
-  );
-};
+        
+        {/* IMAGE */}
+        <div className="w-full h-40 rounded-lg overflow-hidden">
+          <img
+            src={product.image}
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
 
-export default ProductCard;
+        {/* TITLE */}
+        <h3 className="mt-3 text-sm font-medium line-clamp-2">
+          {product.title}
+        </h3>
+
+        {/* PRICE */}
+        <p className="text-fkBlue font-semibold text-lg mt-1">
+          ₹{product.price}
+        </p>
+
+        {/* RATING */}
+        <p className="text-gray-500 text-sm flex items-center gap-1">
+          <FaStar className="text-yellow-400" />
+          {product.rating}
+        </p>
+      </Link>
+    </motion.div>
+  );
+}
